@@ -22,4 +22,3 @@ out <- iNEXT(
 p_size      <- ggiNEXT(out, type = 1)
 p_coverage  <- ggiNEXT(out, type = 2)
 p_profile   <- ggiNEXT(out, type = 3)
-p_size
