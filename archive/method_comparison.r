@@ -1,6 +1,6 @@
 library(iNEXT)
 
-abundance_list <- fromJSON("csvs/abundance_list.json")
+abundance_list <- fromJSON("csvs/abundance_list_norm.json")
 out <- iNEXT(abundance_list, q = c(0,1,2), datatype = "abundance", nboot=1000)
 
 write.csv(out$AsyEst, "csvs/AsyEst.csv", row.names = FALSE)
