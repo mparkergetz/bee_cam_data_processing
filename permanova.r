@@ -28,16 +28,14 @@ ordiellipse(
   alpha = 63
 )
 
-legend("topright",
+legend("center",
        legend = unique(data$color),
        col = 1:length(unique(data$color)),
        pch = 19)
 
-
 # boxplot
 boxplot(mod, main = "Multivariate dispersion by color", ylab = "Distance to centroid")
 TukeyHSD(mod)
-
 
 # pcoa
 pcoa <- cmdscale(dist_mat, k = 2, eig = TRUE)
